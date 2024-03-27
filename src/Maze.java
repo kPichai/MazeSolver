@@ -3,7 +3,7 @@
  * @author Ms. Namasivayam
  * @version 03/04/2022
  */
-
+// Kieran Pichai - G Block CS2
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -146,7 +146,10 @@ public class Maze {
      * @return boolean true/false
      */
     public boolean isValidCell(int row, int col) {
-        // TODO: Complete this function
-        return true;
+        if (row < 0 || row > mazeGrid.length - 1 || col < 0 || col > mazeGrid[0].length) {
+            return false;
+        } else {
+            return !mazeGrid[row][col].isWall();
+        }
     }
 }

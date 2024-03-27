@@ -3,7 +3,7 @@
  * @author Ms. Namasivayam
  * @version 03/10/2023
  */
-
+// Kieran Pichai - G Block CS2
 public class MazeCell {
     private boolean explored;
     private boolean isWall;
