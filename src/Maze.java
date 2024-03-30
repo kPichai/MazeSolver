@@ -1,9 +1,8 @@
 /**
  * Creates a Maze made up of MazeCells
- * @author Ms. Namasivayam
+ * @author Ms. Namasivayam & Kieran P. (CS2 G Block)
  * @version 03/04/2022
  */
-// Kieran Pichai - G Block CS2
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -146,10 +145,13 @@ public class Maze {
      * @return boolean true/false
      */
     public boolean isValidCell(int row, int col) {
-        if (row < 0 || row > mazeGrid.length - 1 || col < 0 || col > mazeGrid[0].length) {
+        // First, checks if cells position is out of bounds
+        if (row < 0 || row >= mazeGrid.length || col < 0 || col >= mazeGrid[0].length) {
+            // Returns false if cell is out of bounds
             return false;
         } else {
-            return !mazeGrid[row][col].isWall();
+            // Returns true if cell is not a wall and not explored, otherwise false
+            return !mazeGrid[row][col].isWall() && !mazeGrid[row][col].isExplored();
         }
     }
 }

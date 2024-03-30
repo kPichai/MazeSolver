@@ -1,9 +1,8 @@
 /**
  * A class that represents a single cell of the maze.
- * @author Ms. Namasivayam
+ * @author Ms. Namasivayam & Kieran P. (CS2 G Block)
  * @version 03/10/2023
  */
-// Kieran Pichai - G Block CS2
 public class MazeCell {
     private boolean explored;
     private boolean isWall;

@@ -1,11 +1,9 @@
 /**
  * A class to test our MazeSolver
- * @author: Nandhini Namasivayam
+ * @author Ms. Namasivayam & Kieran P. (CS2 G Block)
  * @version: 03/04/2022
  */
-
 import java.util.ArrayList;
-// Kieran Pichai - G Block CS2
 public class MazeTester {
 
     /**
